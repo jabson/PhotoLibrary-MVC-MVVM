@@ -8,18 +8,17 @@
 
 import UIKit
 
-class PhotoDetailViewController: UIViewController {
+class PhotoDetailView: UIViewController {
     //MARK: Outlets
     @IBOutlet var imageView: UIImageView!
     
     //MARK: Injection
-    var photo: Photo!
+    var photoURL: String!
     
     //MARK: Object Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = photo.name
-        self.imageView.sd_setImage(with: URL(string: photo.imageURL), placeholderImage: nil, options: .lowPriority, completed: nil)
+        self.imageView.sd_setImage(with: URL(string: photoURL), placeholderImage: nil, options: .lowPriority, completed: nil)
     }
 }

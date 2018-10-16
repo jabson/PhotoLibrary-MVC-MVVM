@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		71642763A4C39817637FB6C6 /* Pods_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866A7ECE1DEA38B0821DF8A3 /* Pods_MVC.framework */; };
 		B014B529217522260046B368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B014B528217522260046B368 /* AppDelegate.swift */; };
-		B014B52B217522260046B368 /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B014B52A217522260046B368 /* PhotoListViewController.swift */; };
 		B014B52E217522260046B368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B014B52C217522260046B368 /* Main.storyboard */; };
 		B014B530217522270046B368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B014B52F217522270046B368 /* Assets.xcassets */; };
 		B014B533217522270046B368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B014B531217522270046B368 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,10 @@
 		B014B543217523B40046B368 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = B014B542217523B40046B368 /* content.json */; };
 		B014B5472175245E0046B368 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B014B5462175245E0046B368 /* APIService.swift */; };
 		B014B549217528FC0046B368 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B014B548217528FC0046B368 /* PhotoTableViewCell.swift */; };
-		B014B54B2175350C0046B368 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B014B54A2175350C0046B368 /* PhotoDetailViewController.swift */; };
+		B014B54B2175350C0046B368 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B014B54A2175350C0046B368 /* PhotoDetailView.swift */; };
+		F258AF8C2175F096003B373F /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258AF8B2175F096003B373F /* PhotoListView.swift */; };
+		F258AF8F2175F1D6003B373F /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258AF8E2175F1D6003B373F /* PhotoListViewModel.swift */; };
+		F258AF912175F9AD003B373F /* PhotoTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258AF902175F9AD003B373F /* PhotoTableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,6 @@
 		866A7ECE1DEA38B0821DF8A3 /* Pods_MVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B014B525217522260046B368 /* MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B014B528217522260046B368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B014B52A217522260046B368 /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
 		B014B52D217522260046B368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B014B52F217522270046B368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B014B532217522270046B368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,8 +35,11 @@
 		B014B542217523B40046B368 /* content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
 		B014B5462175245E0046B368 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		B014B548217528FC0046B368 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
-		B014B54A2175350C0046B368 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		B014B54A2175350C0046B368 /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
 		EE7B0B24A9D136B03F46D5E0 /* Pods-MVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVC/Pods-MVC.debug.xcconfig"; sourceTree = "<group>"; };
+		F258AF8B2175F096003B373F /* PhotoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoListView.swift; sourceTree = "<group>"; };
+		F258AF8E2175F1D6003B373F /* PhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
+		F258AF902175F9AD003B373F /* PhotoTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +96,7 @@
 				B014B541217523A00046B368 /* Service */,
 				B014B53E217522CA0046B368 /* Models */,
 				B014B53C217522A30046B368 /* View */,
-				B014B53B217522860046B368 /* ViewControllers */,
+				F258AF8D2175F125003B373F /* ViewModel */,
 				B014B53D217522AF0046B368 /* Resources */,
 			);
 			path = MVC;
@@ -107,20 +111,13 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		B014B53B217522860046B368 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				B014B52A217522260046B368 /* PhotoListViewController.swift */,
-				B014B54A2175350C0046B368 /* PhotoDetailViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
 		B014B53C217522A30046B368 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				B014B52C217522260046B368 /* Main.storyboard */,
 				B014B531217522270046B368 /* LaunchScreen.storyboard */,
+				F258AF8B2175F096003B373F /* PhotoListView.swift */,
+				B014B54A2175350C0046B368 /* PhotoDetailView.swift */,
 				B014B548217528FC0046B368 /* PhotoTableViewCell.swift */,
 			);
 			path = View;
@@ -149,6 +146,15 @@
 				B014B542217523B40046B368 /* content.json */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		F258AF8D2175F125003B373F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F258AF8E2175F1D6003B373F /* PhotoListViewModel.swift */,
+				F258AF902175F9AD003B373F /* PhotoTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,12 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B014B54B2175350C0046B368 /* PhotoDetailViewController.swift in Sources */,
+				B014B54B2175350C0046B368 /* PhotoDetailView.swift in Sources */,
 				B014B549217528FC0046B368 /* PhotoTableViewCell.swift in Sources */,
-				B014B52B217522260046B368 /* PhotoListViewController.swift in Sources */,
 				B014B540217522E70046B368 /* Photo.swift in Sources */,
 				B014B5472175245E0046B368 /* APIService.swift in Sources */,
 				B014B529217522260046B368 /* AppDelegate.swift in Sources */,
+				F258AF8C2175F096003B373F /* PhotoListView.swift in Sources */,
+				F258AF8F2175F1D6003B373F /* PhotoListViewModel.swift in Sources */,
+				F258AF912175F9AD003B373F /* PhotoTableViewCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +426,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/MVC/App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.space.firstxcode.MVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -433,7 +444,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/MVC/App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.space.firstxcode.MVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

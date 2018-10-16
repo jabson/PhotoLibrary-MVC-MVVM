@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Photo List View Controller-->
+        <!--Photo List View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PhotoListViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PhotoListView" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="938.39999999999998" y="-564.46776611694156"/>
         </scene>
-        <!--Photo Detail View Controller-->
+        <!--Photo Detail View-->
         <scene sceneID="cNL-2U-3vW">
             <objects>
-                <viewController id="mNI-aY-blU" customClass="PhotoDetailViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mNI-aY-blU" customClass="PhotoDetailView" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="an1-So-gkc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
