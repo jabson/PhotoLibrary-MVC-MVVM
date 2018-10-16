@@ -13,4 +13,11 @@ class PhotoTableViewCell: UITableViewCell {
     @IBOutlet var descLabel: UILabel!
     @IBOutlet var createdAtLabel: UILabel!
     @IBOutlet var photoImageView: UIImageView!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        self.descLabel.text = ""
+        self.createdAtLabel.text = ""
+    }
 }

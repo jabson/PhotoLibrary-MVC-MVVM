@@ -33,6 +33,16 @@ class PhotoListViewController: UIViewController {
         self.loadingView.startAnimating()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? PhotoDetailViewController,
+            let photo = sender as? Photo,
+            segue.identifier == "PhotoDetailIdentifier" {
+            
+            dest.photo = photo
+        }
+    }
+    
+    //MARK: Data retrieve
     func fetchData() {
         service.fetchPhotos { [weak self] (photos, error) in
             if let photos = photos {
@@ -45,13 +55,19 @@ class PhotoListViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let dest = segue.destination as? PhotoDetailViewController,
-            let photo = sender as? Photo,
-            segue.identifier == "PhotoDetailIdentifier" {
-            
-            dest.photo = photo
+    //MARK: Data transformation
+    func getFormattedDate(dateString: String) -> String? {
+        let fromFormatter = DateFormatter()
+        fromFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        
+        let toFormatter = DateFormatter()
+        toFormatter.dateFormat = "dd/MM/yyyy"
+        
+        if let date = fromFormatter.date(from: dateString) {
+            return toFormatter.string(from: date)
         }
+        
+        return nil
     }
 }
 
@@ -69,6 +85,9 @@ extension PhotoListViewController: UITableViewDataSource, UITableViewDelegate {
         cell.nameLabel.text = photo.name
         cell.createdAtLabel.text = photo.createdAt
         cell.photoImageView.sd_setImage(with: URL(string: photo.imageURL), placeholderImage: nil, options: .lowPriority, completed: nil)
+        if let formattedDate = getFormattedDate(dateString: photo.createdAt) {
+            cell.createdAtLabel.text = formattedDate
+        }
         if let description = photo.desc {
             cell.descLabel.text = description
         }
