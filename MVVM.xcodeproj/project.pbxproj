@@ -25,7 +25,7 @@
 /* Begin PBXFileReference section */
 		7F70C9C08A1DADB2DD70C355 /* Pods-MVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVC/Pods-MVC.release.xcconfig"; sourceTree = "<group>"; };
 		866A7ECE1DEA38B0821DF8A3 /* Pods_MVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B014B525217522260046B368 /* MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B014B525217522260046B368 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B014B528217522260046B368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B014B52D217522260046B368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B014B52F217522270046B368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		B014B51C217522260046B368 = {
 			isa = PBXGroup;
 			children = (
-				B014B527217522260046B368 /* MVC */,
+				B014B527217522260046B368 /* MVVM */,
 				B014B526217522260046B368 /* Products */,
 				208E5EFA98596B8F7B4DBA54 /* Pods */,
 				91971432095DE49EE1F3F90E /* Frameworks */,
@@ -84,12 +84,12 @@
 		B014B526217522260046B368 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B014B525217522260046B368 /* MVC.app */,
+				B014B525217522260046B368 /* MVVM.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B014B527217522260046B368 /* MVC */ = {
+		B014B527217522260046B368 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
 				B014B53A217522780046B368 /* App */,
@@ -99,7 +99,7 @@
 				F258AF8D2175F125003B373F /* ViewModel */,
 				B014B53D217522AF0046B368 /* Resources */,
 			);
-			path = MVC;
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		B014B53A217522780046B368 /* App */ = {
@@ -160,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B014B524217522260046B368 /* MVC */ = {
+		B014B524217522260046B368 /* MVVM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B014B537217522270046B368 /* Build configuration list for PBXNativeTarget "MVC" */;
+			buildConfigurationList = B014B537217522270046B368 /* Build configuration list for PBXNativeTarget "MVVM" */;
 			buildPhases = (
 				32ABFD5FF5C358FE96A96B23 /* [CP] Check Pods Manifest.lock */,
 				B014B521217522260046B368 /* Sources */,
@@ -174,9 +174,9 @@
 			);
 			dependencies = (
 			);
-			name = MVC;
+			name = MVVM;
 			productName = MVC;
-			productReference = B014B525217522260046B368 /* MVC.app */;
+			productReference = B014B525217522260046B368 /* MVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -194,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B014B520217522260046B368 /* Build configuration list for PBXProject "MVC" */;
+			buildConfigurationList = B014B520217522260046B368 /* Build configuration list for PBXProject "MVVM" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -207,7 +207,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B014B524217522260046B368 /* MVC */,
+				B014B524217522260046B368 /* MVVM */,
 			);
 		};
 /* End PBXProject section */
@@ -425,12 +425,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/MVC/App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVVM/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.space.firstxcode.MVC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.space.firstxcode.MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -443,12 +443,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/MVC/App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVVM/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.space.firstxcode.MVC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.space.firstxcode.MVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,7 +458,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B014B520217522260046B368 /* Build configuration list for PBXProject "MVC" */ = {
+		B014B520217522260046B368 /* Build configuration list for PBXProject "MVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B014B535217522270046B368 /* Debug */,
@@ -467,7 +467,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B014B537217522270046B368 /* Build configuration list for PBXNativeTarget "MVC" */ = {
+		B014B537217522270046B368 /* Build configuration list for PBXNativeTarget "MVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B014B538217522270046B368 /* Debug */,
